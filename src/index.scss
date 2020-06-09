@@ -1,0 +1,112 @@
+@import "./global.scss";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: $font-family-normal;
+  font-weight: $font-weight-normal;
+}
+
+.fm-container {
+  width: 95%;
+  margin: 0px auto;
+
+  @media #{$screen-medium} {
+    width: 90%;
+  }
+  @media #{$screen-large} {
+    width: 85%;
+  }
+  @media #{$screen-extra-large} {
+    width: 80%;
+  }
+}
+
+h1,
+h2,
+h3 {
+  font-weight: $font-weight-bold;
+}
+
+h1 {
+  font-size: 1.6em;
+
+  @media #{$screen-medium} {
+    font-size: 1.8em;
+  }
+  @media #{$screen-large} {
+    font-size: 2em;
+  }
+  @media #{$screen-extra-large} {
+    font-size: 2.2em;
+  }
+}
+
+h2 {
+  font-size: 1.3em;
+
+  @media #{$screen-medium} {
+    font-size: 1.5em;
+  }
+  @media #{$screen-large} {
+    font-size: 1.7em;
+  }
+  @media #{$screen-extra-large} {
+    font-size: 1.9em;
+  }
+}
+
+h3 {
+  font-size: 1.1em;
+
+  @media #{$screen-medium} {
+    font-size: 1.3em;
+  }
+  @media #{$screen-large} {
+    font-size: 1.5em;
+  }
+  @media #{$screen-extra-large} {
+    font-size: 1.7em;
+  }
+}
+
+.fm-call-to-action {
+  display: block;
+  width: 80%;
+  max-width: 240px;
+  margin: 0px auto;
+  padding: 16px 0px;
+  font-weight: $font-weight-semibold;
+  color: $color-white;
+  background-color: $color-pink;
+  border: none;
+  border-radius: 32px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+
+main {
+  background-color: $color-background-one;
+  color: $color-text;
+  transition: $time-transition-normal;
+
+  h1,
+  h2,
+  h3,
+  p {
+    color: $color-text;
+    transition: $time-transition-normal;
+  }
+}
+
+main.dark {
+  background-color: $color-background-one-dark;
+  color: $color-text-dark;
+
+  h1,
+  h2,
+  h3,
+  p {
+    color: $color-text-dark;
+  }
+}
