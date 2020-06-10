@@ -34,13 +34,13 @@ const Footer = () => (
           <IconEmail className="fm-icon-email" /> contact@huddle.com
         </p>
         <div className="fm-social-links">
-          <a href="#">
+          <a href="#" aria-label="Facebook">
             <i className="fab fa-facebook-square"></i>
           </a>
-          <a href="#">
+          <a href="#" aria-label="Instagram">
             <i className="fab fa-instagram"></i>
           </a>
-          <a href="#">
+          <a href="#" aria-label="Twitter">
             <i className="fab fa-twitter-square"></i>
           </a>
         </div>

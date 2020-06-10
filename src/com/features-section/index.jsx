@@ -47,7 +47,7 @@ const FeaturesSection = () => (
     </div>
     <div className="fm-cta-subsection">
       <div className="fm-container">
-        <h1>Ready To Build Your Community?</h1>
+        <h2>Ready To Build Your Community?</h2>
         <button className="fm-call-to-action">Get Started For Free</button>
       </div>
     </div>
