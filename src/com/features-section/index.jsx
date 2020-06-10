@@ -19,7 +19,7 @@ const FeaturesSection = () => (
         </div>
       </div>
     </div>
-    <div className="fm-subsection fm-flowing-subsection">
+    <div className="fm-subsection fm-alternating fm-flowing-subsection">
       <div className="fm-container">
         <img src={ImageFlowingConversations} alt="Flowing Conversations" />
         <div className="fm-caption">
@@ -35,7 +35,7 @@ const FeaturesSection = () => (
     <div className="fm-subsection fm-users-subsection">
       <div className="fm-container">
         <img src={ImageYourUsers} alt="Your Users" />
-        <div className="fm-catpion">
+        <div className="fm-caption">
           <h2>Your Users</h2>
           <p>
             It takes no time at all to integrate Huddle with your app's

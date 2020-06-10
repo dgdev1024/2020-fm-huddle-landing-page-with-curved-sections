@@ -1,1 +1,158 @@
 @import "../../global.scss";
+
+.fm-features-section {
+  .fm-subsection {
+    position: relative;
+    padding: 32px 0px;
+
+    @media #{$screen-medium} {
+      padding: 16px 0px;
+    }
+
+    .fm-container {
+      max-width: 400px;
+    }
+
+    @media #{$screen-medium} {
+      .fm-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "caption image";
+        gap: 16px;
+        max-width: none;
+
+        .fm-caption {
+          grid-area: caption;
+          align-self: center;
+          text-align: left;
+        }
+
+        img {
+          grid-area: image;
+          width: 100%;
+        }
+      }
+
+      &.fm-alternating .fm-container {
+        grid-template-areas: "image caption";
+      }
+    }
+
+    @media #{$screen-large} {
+      .fm-container {
+        gap: 32px;
+      }
+    }
+
+    img {
+      display: block;
+      width: 80%;
+      margin: 0px auto;
+    }
+
+    .fm-caption {
+      text-align: center;
+
+      h2 {
+        margin: 16px 0px;
+      }
+
+      p {
+        line-height: 1.5em;
+      }
+    }
+  }
+
+  .fm-grow-subsection {
+    background-color: $color-background-two;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -96px;
+      left: 0px;
+      width: 100%;
+      height: 96px;
+      background-image: url("../../img/bg-section-top-mobile-1.svg");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-position: bottom center;
+
+      @media #{$screen-medium} {
+        background-image: url("../../img/bg-section-top-desktop-1.svg");
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -96px;
+      left: 0px;
+      width: 100%;
+      height: 96px;
+      background-image: url("../../img/bg-section-bottom-mobile-1.svg");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-position: bottom center;
+
+      @media #{$screen-medium} {
+        background-image: url("../../img/bg-section-bottom-desktop-1.svg");
+      }
+    }
+  }
+
+  .fm-flowing-subsection {
+    padding: 128px 0px;
+
+    @media #{$screen-medium} {
+      padding: 96px 0px 128px;
+    }
+  }
+
+  .fm-users-subsection {
+    background-color: $color-background-two;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -96px;
+      left: 0px;
+      width: 100%;
+      height: 96px;
+      background-image: url("../../img/bg-section-top-mobile-2.svg");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-position: bottom center;
+
+      @media #{$screen-medium} {
+        background-image: url("../../img/bg-section-top-desktop-2.svg");
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -96px;
+      left: 0px;
+      width: 100%;
+      height: 96px;
+      background-image: url("../../img/bg-section-bottom-mobile-2.svg");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-position: bottom center;
+
+      @media #{$screen-medium} {
+        background-image: url("../../img/bg-section-bottom-desktop-2.svg");
+      }
+    }
+  }
+
+  .fm-cta-subsection {
+    padding: 160px 0px;
+
+    h1 {
+      padding: 32px 0px;
+      text-align: center;
+    }
+  }
+}

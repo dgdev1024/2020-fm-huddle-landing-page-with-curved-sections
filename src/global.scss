@@ -17,23 +17,16 @@ $screen-extra-large: "(min-width: 1200px)";
 
 // Global Color Variables
 $color-pink: hsl(322, 100%, 66%);
+$color-bright-pink: hsl(322, 100%, 80%);
 $color-white: hsl(0, 0%, 100%);
 
 // Light Mode Color Variables
 $color-background-header: hsla(0, 0%, 100%, 0.95);
 $color-background-one: hsl(0, 0%, 100%);
 $color-background-two: hsl(207, 100%, 98%);
-$color-background-footer: hsl(192, 100%, 91%);
+$color-background-footer: hsl(192, 100%, 9%);
 $color-text: hsl(0, 0%, 0%);
-$color-text-faded: hsl(0, 0%, 10%);
-
-// Dark Mode Color Variables
-$color-background-header-dark: hsla(0, 0%, 0%, 0.95);
-$color-background-one-dark: hsl(0, 0%, 0%);
-$color-background-two-dark: hsl(207, 100%, 2%);
-$color-background-footer-dark: hsl(192, 100%, 9%);
-$color-text-dark: hsl(0, 0%, 100%);
-$color-text-faded-dark: hsl(0, 0%, 90%);
+$color-text-faded: hsl(0, 0%, 20%);
 
 // User Experience Variables
-$time-transition-normal: 2s;
+$time-transition-normal: 0.5s;

@@ -9,23 +9,24 @@
 }
 
 .fm-container {
-  width: 95%;
+  width: 90%;
   margin: 0px auto;
 
   @media #{$screen-medium} {
-    width: 90%;
-  }
-  @media #{$screen-large} {
     width: 85%;
   }
-  @media #{$screen-extra-large} {
+  @media #{$screen-large} {
     width: 80%;
+  }
+  @media #{$screen-extra-large} {
+    width: 75%;
   }
 }
 
 h1,
 h2,
 h3 {
+  font-family: $font-family-heading;
   font-weight: $font-weight-bold;
 }
 
@@ -76,13 +77,19 @@ h3 {
   width: 80%;
   max-width: 240px;
   margin: 0px auto;
-  padding: 16px 0px;
+  padding: 12px 0px;
   font-weight: $font-weight-semibold;
   color: $color-white;
   background-color: $color-pink;
   border: none;
   border-radius: 32px;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  transition: $time-transition-normal;
+
+  &:hover {
+    background-color: $color-bright-pink;
+    cursor: pointer;
+  }
 }
 
 main {
@@ -96,17 +103,5 @@ main {
   p {
     color: $color-text;
     transition: $time-transition-normal;
-  }
-}
-
-main.dark {
-  background-color: $color-background-one-dark;
-  color: $color-text-dark;
-
-  h1,
-  h2,
-  h3,
-  p {
-    color: $color-text-dark;
   }
 }

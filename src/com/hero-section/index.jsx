@@ -14,7 +14,11 @@ const HeroSection = () => (
         in genuine discussion.
       </p>
       <button className="fm-call-to-action">Get Started For Free</button>
-      <img src={ImageScreenMockups} alt="Build Your Community" />
+      <img
+        className="fm-hero-image"
+        src={ImageScreenMockups}
+        alt="Build Your Community"
+      />
       <div className="fm-statistics-subsection">
         <div className="fm-statistic">
           <img src={IconCommunities} alt="Communities" />

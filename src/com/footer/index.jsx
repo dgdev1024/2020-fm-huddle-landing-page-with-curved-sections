@@ -22,13 +22,15 @@ const Footer = () => (
           <button type="button">Subscribe</button>
         </div>
       </div>
-      <div className="fm-form-body-subsection">
-        <Logo viewBox="0 0 240 39" />
+      <div className="fm-footer-body-subsection">
+        <div className="fm-logo">
+          <Logo viewBox="0 0 240 39" />
+        </div>
         <p className="fm-address">8933 Your Square, Everywhere, NY 99999</p>
-        <p>
+        <p className="fm-contact-info">
           <IconPhone className="fm-icon-phone" /> Phone: +1-543-123-4567
         </p>
-        <p>
+        <p className="fm-contact-info">
           <IconEmail className="fm-icon-email" /> contact@huddle.com
         </p>
         <div className="fm-social-links">
