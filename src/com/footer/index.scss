@@ -74,6 +74,7 @@ footer {
         input {
           width: 100%;
           padding: 12px;
+          font-size: 0.9em;
           border: none;
           border-radius: 8px;
 
@@ -86,7 +87,8 @@ footer {
           justify-self: end;
           width: 160px;
           padding: 12px;
-          font-weight: $font-weight-bold;
+          font-weight: $font-weight-semibold;
+          font-size: 0.9em;
           color: $color-white;
           background-color: $color-pink;
           border: none;

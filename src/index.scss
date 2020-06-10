@@ -5,6 +5,7 @@
   padding: 0px;
   box-sizing: border-box;
   font-family: $font-family-normal;
+  font-size: $font-size-normal;
   font-weight: $font-weight-normal;
 }
 
@@ -77,8 +78,9 @@ h3 {
   width: 80%;
   max-width: 240px;
   margin: 0px auto;
-  padding: 12px 0px;
+  padding: 16px 0px;
   font-weight: $font-weight-semibold;
+  font-size: 0.9em;
   color: $color-white;
   background-color: $color-pink;
   border: none;
